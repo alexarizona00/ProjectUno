@@ -6,7 +6,15 @@ let restEl5 = document.querySelector("#rest5");
 let restEl6 = document.querySelector("#rest6");
 let weatherEl = document.querySelector(".weather");
 
+let city = localStorage.getItem('city')
+
+console.log(city)
+localStorage.clear()
+console.log(city)
+
 function restApi() {
+ weather();
+ticketApi();
   const options = {
     method: "GET",
     headers: {
@@ -81,9 +89,9 @@ function weather() {
     .then(function (data) {
       console.log(data);
       weatherEl.textContent = data["main"]["temp"];
-    });
+          });
 }
-weather();
+restApi()
 
-restApi();
-ticketApi();
+
+
