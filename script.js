@@ -5,6 +5,8 @@ let restEl4 = document.querySelector("#rest4");
 let restEl5 = document.querySelector("#rest5");
 let restEl6 = document.querySelector("#rest6");
 let weatherEl = document.querySelector(".weather");
+let submitBtnArea = document.querySelector("#search-container");
+let locationEl = document.querySelector(".location");
 
 function restApi() {
   const options = {
@@ -83,7 +85,7 @@ function weather() {
       weatherEl.textContent = data["main"]["temp"];
     });
 }
-weather();
 
+weather();
 restApi();
 ticketApi();
