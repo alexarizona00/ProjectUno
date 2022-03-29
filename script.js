@@ -81,7 +81,7 @@ function hotelApi() {
 }
 function weather() {
   fetch(
-    "https://api.openweathermap.org/data/2.5/weather?q=Tucson&units=imperial&appid=f9b6ea43279bd22f926c1e54b46af35a"
+    "https://api.openweathermap.org/data/2.5/weather?q=Tucson&units=imperial&appid=6deedd65fb7eb5d3e6a9e33d74aa628d"
   )
     .then(function (response) {
       return response.json();
