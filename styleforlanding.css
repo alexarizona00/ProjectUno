@@ -14,3 +14,28 @@ h3 {
 h4 {
   display: inline-block;
 }
+body {
+  background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/04/09/Night-city-background-with-many-building-Graphics-3832769-1.jpg");
+  height: max-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.footer {
+  display: block;
+  background-color:  #94b8f2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+}
+/* *{
+  background-color:  #94b8f2;
+} */

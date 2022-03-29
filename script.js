@@ -1,4 +1,5 @@
 
+
 let restEl1 = document.querySelector("#rest1");
 let restEl2 = document.querySelector("#rest2");
 let restEl3 = document.querySelector("#rest3");
@@ -98,4 +99,5 @@ weather();
 restApi();
 ticketApi();
 hotelApi();
+
 
