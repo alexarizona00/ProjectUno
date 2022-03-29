@@ -1,3 +1,4 @@
+
 let restEl1 = document.querySelector("#rest1");
 let restEl2 = document.querySelector("#rest2");
 let restEl3 = document.querySelector("#rest3");
@@ -5,16 +6,10 @@ let restEl4 = document.querySelector("#rest4");
 let restEl5 = document.querySelector("#rest5");
 let restEl6 = document.querySelector("#rest6");
 let weatherEl = document.querySelector(".weather");
-
-let city = localStorage.getItem('city')
-
-console.log(city)
-localStorage.clear()
-console.log(city)
+let submitBtnArea = document.querySelector("#search-container");
+let locationEl = document.querySelector(".location");
 
 function restApi() {
- weather();
-ticketApi();
   const options = {
     method: "GET",
     headers: {
@@ -89,9 +84,9 @@ function weather() {
     .then(function (data) {
       console.log(data);
       weatherEl.textContent = data["main"]["temp"];
-          });
+    });
 }
-restApi()
 
-
-
+weather();
+restApi();
+ticketApi();
