@@ -8,13 +8,27 @@ h3 {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 30%;
+  width: 400px;
+  height: 400px;
+  margin: 5px;
   border-radius: 5px;
 }
 h4 {
   display: inline-block;
+  text-decoration: underline;
 }
+
+.weather {
+  align-content: center;
+}
+
 body {
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  font-size: large;
+  color: rgb(57, 189, 114);
+  text-align: center;
   background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/04/09/Night-city-background-with-many-building-Graphics-3832769-1.jpg");
   height: max-content;
   background-position: center;
@@ -22,9 +36,17 @@ body {
   background-size: cover;
   position: relative;
 }
+
+.bg-img {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer {
   display: block;
   background-color:  #94b8f2;
+  text-decoration: underline;
   position: fixed;
   bottom: 0;
   left: 0;
