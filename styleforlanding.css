@@ -1,6 +1,6 @@
 .sizing {
   text-align: center;
-  padding-right: 60px;
+  padding: 15px;
 }
 h3 {
   display: inline;
@@ -15,6 +15,7 @@ h3 {
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  margin-left: 3%;
 }
 h4 {
   display: inline-block;
@@ -65,5 +66,14 @@ body {
   font-weight: bolder;
   text-align: center;
   border: 1px solid blue;
+}
+.btn{
+  background-color: #94b8f2;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0%;
+  padding: 4px 4px;
+  margin-right: 0%;
 }
 
