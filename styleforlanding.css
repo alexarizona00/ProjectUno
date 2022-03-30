@@ -6,16 +6,19 @@ h3 {
   display: inline;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 5px 15px 0px;
   transition: 0.3s;
   width: 30%;
   border-radius: 5px;
+  display: flex;
 }
 h4 {
   display: inline-block;
 }
 body {
   background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/04/09/Night-city-background-with-many-building-Graphics-3832769-1.jpg");
+  background-color: #94b8f2;
   height: max-content;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,6 +39,3 @@ body {
   font-size: large;
   font-weight: bold;
 }
-/* *{
-  background-color:  #94b8f2;
-} */
