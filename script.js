@@ -8,6 +8,8 @@ let weatherEl = document.querySelector(".weather");
 let locationEl = document.querySelector(".location");
 let hotelEl = document.querySelector(".hotel");
 let city = localStorage.getItem("city");
+let hotelLinkEl = document.querySelector("#hotelLink");
+let hotelRating = document.querySelector(".rating");
 
 ////// added localstorage key for the city that stores from previous page and is recalled below, then the local storage is cleared and variable city holds the data.
 console.log(city);
@@ -62,7 +64,7 @@ function hotelApi() {
     method: "GET",
     headers: {
       "X-RapidAPI-Host": "best-booking-com-hotel.p.rapidapi.com",
-      "X-RapidAPI-Key": "4d6a1a87e1msh16db033046127ffp1ddfebjsnf1ac5f5467b0",
+      "X-RapidAPI-Key": "12651ae51dmsh8eb4497bc3d6f7dp1f83d5jsnf07887095a67",
     },
   };
   fetch(
@@ -77,6 +79,8 @@ function hotelApi() {
     .then(function (data) {
       console.log(data);
       hotelEl.textContent = data["name"];
+      hotelLinkEl.href = data.link;
+      hotelRating.textContent = "Rating: " + data.rating;
     });
 }
 function weather() {
