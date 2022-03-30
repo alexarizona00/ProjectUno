@@ -1,5 +1,3 @@
-
-
 let restEl1 = document.querySelector("#rest1");
 let restEl2 = document.querySelector("#rest2");
 let restEl3 = document.querySelector("#rest3");
@@ -21,7 +19,7 @@ function restApi() {
     method: "GET",
     headers: {
       "X-RapidAPI-Host": "restaurants-near-me-usa.p.rapidapi.com",
-      "X-RapidAPI-Key": "59f6b0a5d6msh2d72ba87fa06eadp18d3cdjsn5d6a057b5578",
+      "X-RapidAPI-Key": "4d6a1a87e1msh16db033046127ffp1ddfebjsnf1ac5f5467b0",
     },
   };
 
@@ -64,7 +62,7 @@ function hotelApi() {
     method: "GET",
     headers: {
       "X-RapidAPI-Host": "best-booking-com-hotel.p.rapidapi.com",
-      "X-RapidAPI-Key": "59f6b0a5d6msh2d72ba87fa06eadp18d3cdjsn5d6a057b5578",
+      "X-RapidAPI-Key": "4d6a1a87e1msh16db033046127ffp1ddfebjsnf1ac5f5467b0",
     },
   };
   fetch(
@@ -95,9 +93,7 @@ function weather() {
     });
 }
 
-weather();
-restApi();
-ticketApi();
-hotelApi();
-
-
+// weather();
+// restApi();
+// ticketApi();
+// hotelApi();
