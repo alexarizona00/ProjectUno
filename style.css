@@ -6,9 +6,10 @@ html {
 
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://vastphotos.com/files/uploads/photos/10588/chicago-skyline-photo-l.jpg");
-  height: 60%;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://vastphotos.com/files/uploads/photos/10588/chicago-skyline-photo-l.jpg"); */
+    background-image: url('https://source.unsplash.com/random/?city,night');
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +32,8 @@ html {
 .bottom-color {
   background-color: #94b8f2;
   margin-top: 0;
-  height: 40%;
+  /* height: 40%; */
+  height: 4%;
 }
 .footer {
   display: block;
