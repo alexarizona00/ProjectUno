@@ -97,7 +97,7 @@ function weather() {
     });
 }
 
-// weather();
-// restApi();
-// ticketApi();
-// hotelApi();
+weather();
+restApi();
+ticketApi();
+hotelApi();
